@@ -1,0 +1,45 @@
+{
+  "judul": "Sistem Pakar Penentuan Kelayakan Pengajuan PKL atau Skripsi",
+  "batas": "Aturan berdasarkan Pedoman Pelaksanaan Tugas Akhir FT UNRAM 2022 dan Permendikbud No. 3 Tahun 2020. Hasil program ini merupakan simulasi saran awal, bukan keputusan final dari Fakultas.",
+  "sumber": {
+    "S1": "Guideline for the Implementation of the Final Project, Faculty of Engineering UNRAM 2022",
+    "S2": "Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["sudah menempuh minimal 115 SKS", "IPK minimal 2.00", "tidak ada nilai E"],
+      "mode": "dan",
+      "maka": "syarat dasar akademik terpenuhi",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": ["syarat dasar akademik terpenuhi", "lulus praktikum atau tugas besar", "lulus praktik kerja lapangan (PKL)"],
+      "mode": "dan",
+      "maka": "Layak Mengajukan Proposal Skripsi",
+      "sumber": "S1"
+    },
+    {
+      "id": "R3",
+      "jika": ["Layak Mengajukan Proposal Skripsi", "similarity Turnitin maksimal 30 persen", "lulus seminar hasil"],
+      "mode": "dan",
+      "maka": "Layak Mendaftar Ujian Pendadaran",
+      "sumber": "S1"
+    },
+    {
+      "id": "R4",
+      "jika": ["sudah menempuh minimal 144 SKS", "IPK minimal 2.00"],
+      "mode": "dan",
+      "maka": "syarat kelulusan nasional terpenuhi",
+      "sumber": "S2"
+    },
+    {
+      "id": "R5",
+      "jika": ["Layak Mendaftar Ujian Pendadaran", "lulus ujian pendadaran", "syarat kelulusan nasional terpenuhi"],
+      "mode": "dan",
+      "maka": "Layak Lulus Sarjana S1",
+      "sumber": "S1 dan S2"
+    }
+  ]
+}
