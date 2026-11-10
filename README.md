@@ -1,6 +1,6 @@
 # Sistem Pakar Penentuan Kelayakan Pengajuan PKL dan Skripsi (Forward Chaining)
 
-Repository ini berisi program simulasi sistem pakar berbasis Python untuk menentukan kelayakan mahasiswa program sarjana (S1) Teknik Informatika dalam mengambil tahapan akademik (Pengajuan Proposal, Ujian Pendadaran, hingga Kelulusan Sarjana). 
+Tugas ini berisi program simulasi sistem pakar berbasis Python untuk menentukan kelayakan mahasiswa program sarjana (S1) Teknik Informatika dalam mengambil tahapan akademik (Pengajuan Proposal, Ujian Pendadaran, hingga Kelulusan Sarjana). 
 
 ---
 
