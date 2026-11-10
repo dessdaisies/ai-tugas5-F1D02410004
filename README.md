@@ -15,18 +15,20 @@ Repository ini berisi program simulasi sistem pakar berbasis Python untuk menent
 Sistem pakar ini dirancang untuk melakukan simulasi pengecekan kelayakan mahasiswa tingkat akhir berdasarkan aturan akademik resmi. Program menanyakan serangkaian fakta dasar kepada pengguna (seperti status SKS, IPK, nilai mata kuliah, PKL, hingga hasil Turnitin), lalu melakukan proses inferensi untuk memberikan kesimpulan tahapan akademik yang dapat dicapai.
 
 ### B. Cara Menjalankan Program
-Pastikan komputer Anda sudah terpasang Python. Jalankan perintah berikut di terminal / Command Prompt pada direktori proyek:
-\`\`\`bash
-python main.py
-\`\`\`
+1. Pastikan perangkat Anda sudah terinstal **Python**.
+2. Pastikan file `main.py` dan `kb_kelayakan.json` berada di dalam satu folder yang sama.
+3. Buka terminal atau Command Prompt (CMD) di direktori folder tersebut.
+4. Jalankan program dengan perintah berikut:
+   ```bash
+   python main.py
 
 ---
 
 ## 3. Daftar Sumber & Tabel Aturan 
 
 Basis pengetahuan pada file \`kb_kelayakan.json\` diturunkan dari dua sumber resmi:
-1. **S1:** Pedoman Pelaksanaan Tugas Akhir Fakultas Teknik Universitas Mataram (FT UNRAM 2022).
-2. **S2:** Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi.
+1. **S1:** Pedoman Pelaksanaan Proyek Tugas Akhir Fakultas Teknik Universitas Mataram (FT UNRAM 2022). (https://ft.unram.ac.id/id/academic-guidance/)
+2. **S2:** Permendikbud No. 3 Tahun 2020 tentang Standar Nasional Pendidikan Tinggi. (https://peraturan.bpk.go.id/Details/163703/permendikbud-no-3-tahun-2020)
 
 ### Tabel Aturan (Rule Base)
 | ID Aturan | Premis (IF) | Konklusi (THEN) | Sumber |
@@ -51,17 +53,17 @@ Program telah diuji melalui 3 skenario berbeda:
 ### A. Kasus 1: Berhasil Penuh (Layak Lulus Sarjana S1)
 Semua syarat terpenuhi (menjawab `y` pada seluruh pertanyaan).
 * **Screenshot:** \`screenshot/kasus1 berhasil.png\`
-![Kasus Berhasil](Screenshot/kasus1 berhasil.png)
+![Kasus Berhasil](Screenshot/berhasil.png)
 
 ### B. Kasus 2: Berhasil Sebagian (Tahap Proposal)
 Memenuhi syarat akademik dasar dan PKL (Layak Mengajukan Proposal), namun belum memenuhi syarat pendadaran/akhir.
 * **Screenshot:** \`screenshot/kasus-sebagian.png\`
-![Kasus Sebagian](screenshot/kasus-sebagian.png)
+![Kasus Berhasil Sebagian](screenshot/berhasil_sebagian.png)
 
 ### C. Kasus 3: Kasus Negatif / Gagal
 Sebagian besar syarat utama tidak terpenuhi (menjawab `t`), sehingga program berhenti tanpa mencapai kesimpulan akhir.
 * **Screenshot:** \`screenshot/kasus-gagal.png\`
-![Kasus Gagal](screenshot/kasus-gagal.png)
+![Kasus Gagal](screenshot/gagal.png)
 
 ---
 
@@ -71,4 +73,4 @@ Sebagian besar syarat utama tidak terpenuhi (menjawab `t`), sehingga program ber
 ---
 
 ## 7. Penggunaan Alat Bantu AI
-Dalam penyusunan kode program, struktur basis pengetahuan JSON, dan dokumentasi repository ini, pemanfaatan alat bantu AI digunakan sebagai sarana asistensi teknis, debugging kode, serta perapian tata letak antarmuka terminal (*terminal output formatting*).
+Dalam proses pembuatan program ini, AI dimanfaatkan sebagai sarana asistensi untuk membantu penulisan kode, pengecekan *bug*, serta merapikan tampilan teks di terminal agar lebih rapi.
