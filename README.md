@@ -58,7 +58,7 @@ Semua syarat terpenuhi (menjawab `y` pada seluruh pertanyaan).
 ### B. Kasus 2: Berhasil Sebagian (Tahap Proposal)
 Memenuhi syarat akademik dasar dan PKL (Layak Mengajukan Proposal), namun belum memenuhi syarat pendadaran/akhir.
 * **Screenshot:** \`screenshot/kasus-sebagian.png\`
-![Kasus Berhasil Sebagian](screenshot/berhasil_sebagian.png)
+![Kasus Berhasil Sebagian](screenshot/berhasilsebagian.png)
 
 ### C. Kasus 3: Kasus Negatif / Gagal
 Sebagian besar syarat utama tidak terpenuhi (menjawab `t`), sehingga program berhenti tanpa mencapai kesimpulan akhir.
